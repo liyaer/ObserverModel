@@ -15,6 +15,8 @@
 		D2CB7D981F75ED390010423E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CB7D961F75ED390010423E /* LaunchScreen.storyboard */; };
 		D2CB7DA31F75ED390010423E /* ObserverModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB7DA21F75ED390010423E /* ObserverModelTests.m */; };
 		D2CB7DAE1F75ED390010423E /* ObserverModelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB7DAD1F75ED390010423E /* ObserverModelUITests.m */; };
+		D2CB7DBD1F75F04D0010423E /* PostNotiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB7DBC1F75F04D0010423E /* PostNotiVC.m */; };
+		D2CB7DC01F7604BE0010423E /* NotiTwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB7DBF1F7604BD0010423E /* NotiTwoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		D2CB7DA91F75ED390010423E /* ObserverModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObserverModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CB7DAD1F75ED390010423E /* ObserverModelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverModelUITests.m; sourceTree = "<group>"; };
 		D2CB7DAF1F75ED390010423E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CB7DBB1F75F04D0010423E /* PostNotiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostNotiVC.h; sourceTree = "<group>"; };
+		D2CB7DBC1F75F04D0010423E /* PostNotiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostNotiVC.m; sourceTree = "<group>"; };
+		D2CB7DBE1F7604BD0010423E /* NotiTwoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotiTwoVC.h; sourceTree = "<group>"; };
+		D2CB7DBF1F7604BD0010423E /* NotiTwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotiTwoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,13 @@
 		D2CB7D871F75ED390010423E /* ObserverModel */ = {
 			isa = PBXGroup;
 			children = (
-				D2CB7D8B1F75ED390010423E /* AppDelegate.h */,
-				D2CB7D8C1F75ED390010423E /* AppDelegate.m */,
 				D2CB7D8E1F75ED390010423E /* ViewController.h */,
 				D2CB7D8F1F75ED390010423E /* ViewController.m */,
+				D2CB7DBB1F75F04D0010423E /* PostNotiVC.h */,
+				D2CB7DBC1F75F04D0010423E /* PostNotiVC.m */,
+				D2CB7DBE1F7604BD0010423E /* NotiTwoVC.h */,
+				D2CB7DBF1F7604BD0010423E /* NotiTwoVC.m */,
 				D2CB7D911F75ED390010423E /* Main.storyboard */,
-				D2CB7D941F75ED390010423E /* Assets.xcassets */,
-				D2CB7D961F75ED390010423E /* LaunchScreen.storyboard */,
-				D2CB7D991F75ED390010423E /* Info.plist */,
 				D2CB7D881F75ED390010423E /* Supporting Files */,
 			);
 			path = ObserverModel;
@@ -117,6 +122,11 @@
 		D2CB7D881F75ED390010423E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2CB7D8B1F75ED390010423E /* AppDelegate.h */,
+				D2CB7D8C1F75ED390010423E /* AppDelegate.m */,
+				D2CB7D941F75ED390010423E /* Assets.xcassets */,
+				D2CB7D961F75ED390010423E /* LaunchScreen.storyboard */,
+				D2CB7D991F75ED390010423E /* Info.plist */,
 				D2CB7D891F75ED390010423E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CB7DBD1F75F04D0010423E /* PostNotiVC.m in Sources */,
 				D2CB7D901F75ED390010423E /* ViewController.m in Sources */,
 				D2CB7D8D1F75ED390010423E /* AppDelegate.m in Sources */,
 				D2CB7D8A1F75ED390010423E /* main.m in Sources */,
+				D2CB7DC01F7604BE0010423E /* NotiTwoVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

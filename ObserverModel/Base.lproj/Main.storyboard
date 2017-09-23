@@ -1,26 +1,182 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="P0N-hK-VtN">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alT-m1-bke">
+                                <rect key="frame" x="32" y="117" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="KVO：一种属性监测机制"/>
+                                <connections>
+                                    <action selector="getKVOHandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJK-e5-iI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="032-XW-LWK">
+                                <rect key="frame" x="2" y="279" width="317" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="通知：一对多(包含一对一)的一种依赖关系"/>
+                                <connections>
+                                    <segue destination="RaK-eq-xUw" kind="show" id="Vci-MX-E4i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS中的观察者模式：KVO和通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xM-kU-VHr">
+                                <rect key="frame" x="32" y="76" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXc-3I-gJY">
+                                <rect key="frame" x="16" y="156" width="288" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="cdV-bQ-6BA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFX-yr-8Dt">
+                                <rect key="frame" x="0.0" y="330" width="320" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Fwy-BL-1Q0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygb-Qh-TdC">
+                                <rect key="frame" x="152" y="325" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="错误的使用通知的例子"/>
+                                <connections>
+                                    <action selector="testNotiTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9R-bE-RYl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nXc-3I-gJY" secondAttribute="trailing" id="26P-Zo-zVQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xFX-yr-8Dt" secondAttribute="bottom" id="5n5-Nk-h05"/>
+                            <constraint firstItem="nXc-3I-gJY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DLj-H2-XLo"/>
+                            <constraint firstItem="nXc-3I-gJY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="156" id="R7w-wT-Q7c"/>
+                            <constraint firstItem="xFX-yr-8Dt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d9J-ES-xZY"/>
+                            <constraint firstAttribute="trailing" secondItem="xFX-yr-8Dt" secondAttribute="trailing" id="esy-uw-fdo"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="68q-Em-UWN"/>
+                    <connections>
+                        <outlet property="showKVOLab" destination="nXc-3I-gJY" id="Xrn-JQ-twC"/>
+                        <outlet property="showNoti" destination="xFX-yr-8Dt" id="Z3I-la-0C1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2341.875" y="-578.75"/>
+        </scene>
+        <!--Post NotiVC-->
+        <scene sceneID="PjO-lp-etz">
+            <objects>
+                <viewController id="RaK-eq-xUw" customClass="PostNotiVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bgO-FL-OpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Oe1-sB-xrk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RM3-ai-bEK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwG-Qd-WGF">
+                                <rect key="frame" x="129" y="193" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="发送通知"/>
+                                <connections>
+                                    <action selector="postNoti:" destination="RaK-eq-xUw" eventType="touchUpInside" id="iz6-d1-OGl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABZ-5T-RwQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3078.75" y="-580"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dDh-tF-IBB">
+            <objects>
+                <viewController id="tTF-Pw-nKn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1gD-BD-wm8"/>
+                        <viewControllerLayoutGuide type="bottom" id="JiY-um-aBP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10n-93-Nd1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VF-Tr-XwR">
+                                <rect key="frame" x="118" y="278" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="go next VC "/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="zVu-2g-vVZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多加这个控制器是为了测试：移除和不移除通知对控制器释放的影响                         测试结果：无论通知是否移除，都不影响控制器的释放，但是这并不能说明不移除就是对的，还是要在控制器的dealloc中移除通知" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJw-Pt-WhK">
+                                <rect key="frame" x="0.0" y="101" width="320" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DJw-Pt-WhK" secondAttribute="trailing" id="L3V-YI-HO6"/>
+                            <constraint firstItem="DJw-Pt-WhK" firstAttribute="top" secondItem="1gD-BD-wm8" secondAttribute="bottom" constant="37" id="cAk-zy-rle"/>
+                            <constraint firstItem="DJw-Pt-WhK" firstAttribute="leading" secondItem="10n-93-Nd1" secondAttribute="leading" id="uVQ-DO-3fN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tjE-Dk-mGq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsP-Xk-X7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.5" y="-580"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NrI-aN-mep">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0N-hK-VtN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CK4-QI-DP6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tTF-Pw-nKn" kind="relationship" relationship="rootViewController" id="A4i-aG-g3R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jy7-H9-1Iv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="-579"/>
         </scene>
     </scenes>
 </document>
