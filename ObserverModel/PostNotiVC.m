@@ -23,6 +23,7 @@
 
 - (IBAction)postNoti:(id)sender
 {
+     //object就是要传的值，一次只能传一个值。可以通过userInfo来实现多个参数的传值使用。
     [[NSNotificationCenter defaultCenter] postNotificationName:@"notiOne" object:nil userInfo:@{@"notiKey":@"发送通知时携带的参数"}];
 }
 
